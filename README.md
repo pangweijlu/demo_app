@@ -1,0 +1,1 @@
+THis is my frist app in git. just for text
