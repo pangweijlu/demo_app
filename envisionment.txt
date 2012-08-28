@@ -1,0 +1,161 @@
+=======================================
+=    S T A T E   R E P O S I T O R Y
+=======================================
+--------------------
+State UID: b-3-3-b
+V: {pos , pos , neg}
+pi: {pos , neg}
+pe: {pos , neg}
+pt: {pos , pos}
+
+Successor States:
+ b-3-7-b,  r-3-3-b,  n-7-7-7,  b-3-3-b
+Predecessor States:
+ r-3-3-b,  b-3-7-b,  b-3-3-b
+
+--------------------
+State UID: b-3-7-b
+V: {pos , pos , neg}
+pi: {pos , neg}
+pe: {pos , zer}
+pt: {pos , pos}
+
+Successor States:
+ b-3-7-b,  7-7-b-7,  r-3-3-b,  n-7-7-7,  b-3-b-b,  b-3-3-b
+Predecessor States:
+ b-3-7-b,  r-3-3-b,  b-3-3-b,  b-3-b-b
+
+--------------------
+State UID: b-3-b-b
+V: {pos , pos , neg}
+pi: {pos , neg}
+pe: {pos , pos}
+pt: {pos , pos}
+
+Successor States:
+ b-3-7-b,  7-7-b-7,  n-7-7-7,  b-3-b-b
+Predecessor States:
+ b-3-7-b,  b-3-b-b
+
+--------------------
+State UID: 7-7-b-7
+V: {pos , zer , neg}
+pi: {pos , zer}
+pe: {pos , pos}
+pt: {pos , zer}
+
+Successor States:
+ 3-b-b-3
+Predecessor States:
+ b-3-7-b,  b-3-b-b
+
+--------------------
+State UID: 3-b-b-3
+V: {pos , neg , neg}
+pi: {pos , pos}
+pe: {pos , pos}
+pt: {pos , neg}
+
+Successor States:
+ j-b-b-3,  3-b-b-3
+Predecessor States:
+ 7-7-b-7,  3-b-b-3,  j-b-b-3,  n-7-7-7
+
+--------------------
+State UID: r-3-3-b
+V: {pos , pos , zer}
+pi: {pos , neg}
+pe: {pos , neg}
+pt: {pos , pos}
+
+Successor States:
+ b-3-7-b,  H-3-3-b,  r-3-3-b,  b-3-3-b
+Predecessor States:
+ b-3-7-b,  H-3-3-b,  r-3-3-b,  b-3-3-b
+
+--------------------
+State UID: n-7-7-7
+V: {pos , zer , zer}
+pi: {pos , zer}
+pe: {pos , zer}
+pt: {pos , zer}
+
+Successor States:
+ n-7-7-7,  H-3-3-b,  3-b-b-3
+Predecessor States:
+ n-7-7-7,  b-3-b-b,  b-3-7-b,  z-b-3-3,  z-b-7-3,  z-b-b-3,  b-3-3-b
+
+--------------------
+State UID: j-b-b-3
+V: {pos , neg , zer}
+pi: {pos , pos}
+pe: {pos , pos}
+pt: {pos , neg}
+
+Successor States:
+ 3-b-b-3,  j-b-b-3,  z-b-b-3,  z-b-7-3
+Predecessor States:
+ 3-b-b-3,  j-b-b-3,  z-b-7-3,  z-b-b-3
+
+--------------------
+State UID: H-3-3-b
+V: {pos , pos , pos}
+pi: {pos , neg}
+pe: {pos , neg}
+pt: {pos , pos}
+
+Successor States:
+ r-3-3-b,  H-3-3-b
+Predecessor States:
+ D-7-3-7,  H-3-3-b,  r-3-3-b,  n-7-7-7
+
+--------------------
+State UID: D-7-3-7
+V: {pos , zer , pos}
+pi: {pos , zer}
+pe: {pos , neg}
+pt: {pos , zer}
+
+Successor States:
+ H-3-3-b
+Predecessor States:
+ z-b-3-3,  z-b-7-3
+
+--------------------
+State UID: z-b-3-3
+V: {pos , neg , pos}
+pi: {pos , pos}
+pe: {pos , neg}
+pt: {pos , neg}
+
+Successor States:
+ D-7-3-7,  z-b-3-3,  z-b-7-3,  n-7-7-7
+Predecessor States:
+ z-b-3-3,  z-b-7-3
+
+--------------------
+State UID: z-b-7-3
+V: {pos , neg , pos}
+pi: {pos , pos}
+pe: {pos , zer}
+pt: {pos , neg}
+
+Successor States:
+ D-7-3-7,  j-b-b-3,  z-b-3-3,  n-7-7-7,  z-b-b-3,  z-b-7-3
+Predecessor States:
+ j-b-b-3,  z-b-3-3,  z-b-7-3,  z-b-b-3
+
+--------------------
+State UID: z-b-b-3
+V: {pos , neg , pos}
+pi: {pos , pos}
+pe: {pos , pos}
+pt: {pos , neg}
+
+Successor States:
+ j-b-b-3,  z-b-7-3,  z-b-b-3,  n-7-7-7
+Predecessor States:
+ j-b-b-3,  z-b-b-3,  z-b-7-3
+
+--------------------------- End of State Repository
+Number of states in repository = 13 (45 transitions)
